@@ -29,8 +29,8 @@ formEl.onsubmit = function (e) {
   e.preventDefault();
   const inpEl = formEl.elements.name;
   //paimti reiksme
-  let inputVal = inpEl.value.trim();
-  console.log("inputVal ===", typeof inputVal);
+  let inputVal = formEl.elements.name.value.trim();
+  console.log("inputVal ===", inputVal);
   addLi(inputVal);
   // inputVal = ''; // neveikia nes isvalom reiksme o ne el
   inpEl.value = "";
